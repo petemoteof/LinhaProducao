@@ -68,10 +68,10 @@ namespace LinhaDeProducao
 
                 MySqlParameter[] param = new MySqlParameter[]
                 {
-         new MySqlParameter("@nome", this.nome),
-         new MySqlParameter("@id_empresa", this.id_empresa),
-         new MySqlParameter("@id_setor", this.id_setor),
-         new MySqlParameter("@id_responsavel", this.id_responsavel),
+                     new MySqlParameter("@nome", this.nome),
+                     new MySqlParameter("@id_empresa", this.id_empresa),
+                     new MySqlParameter("@id_setor", this.id_setor),
+                     new MySqlParameter("@id_responsavel", this.id_responsavel),
                 };
 
                 this.ExecuteQueryWithParameters(query, param);

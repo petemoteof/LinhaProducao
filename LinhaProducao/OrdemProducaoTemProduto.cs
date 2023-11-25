@@ -69,9 +69,9 @@ namespace Listas
 
                 MySqlParameter[] param = new MySqlParameter[]
                 {
-         new MySqlParameter("@id_ordem", this.id_ordem),
-         new MySqlParameter("@id_produto", this.id_produto),
-         new MySqlParameter("@quantidade", this.quantidade),
+                    new MySqlParameter("@id_ordem", this.id_ordem),
+                    new MySqlParameter("@id_produto", this.id_produto),
+                    new MySqlParameter("@quantidade", this.quantidade),
                 };
 
                 this.ExecuteQueryWithParameters(query, param);
