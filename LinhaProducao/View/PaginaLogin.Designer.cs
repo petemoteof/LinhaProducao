@@ -88,12 +88,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(308, 265);
+            this.ClientSize = new System.Drawing.Size(780, 457);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.buttonLogar);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxSenha);
             this.Controls.Add(this.textBoxEmail);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "PaginaLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PaginaLogin";

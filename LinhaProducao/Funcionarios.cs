@@ -30,7 +30,7 @@ namespace Listas
         public string GetSenha()
         {
             //this.senha = BCrypt.Net.BCrypt.HashPassword(senha, BCrypt.Net.BCrypt.GenerateSalt());
-
+            
             this.senha = senha;
 
             return this.senha;
