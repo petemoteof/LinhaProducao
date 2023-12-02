@@ -20,7 +20,10 @@ namespace LinhaProducao.View
 
         public void AbrirForm<Forms>() where Forms : Form, new() 
         {
-            Form formulario = panelConteudo.Controls.OfType<Form>().FirstOrDefault();
+            Form formulario;
+            panelConteudo.Controls.Clear();
+
+            formulario = panelConteudo.Controls.OfType<Form>().FirstOrDefault();
 
             if (formulario == null)
             {
@@ -62,6 +65,16 @@ namespace LinhaProducao.View
         private void buttonCliente_Click(object sender, EventArgs e)
         {
             AbrirForm<PaginaClientes>();
+        }
+
+        private void panelConteudo_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void buttonProdutos_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

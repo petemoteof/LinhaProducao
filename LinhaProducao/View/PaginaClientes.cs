@@ -14,6 +14,7 @@ namespace LinhaProducao.View
     public partial class PaginaClientes : Form
     {
         public PaginaClientes()
+
         {
             InitializeComponent();
 
@@ -53,6 +54,16 @@ namespace LinhaProducao.View
         }
 
         private void listViewClientes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listViewProdutos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PaginaClientes_Load(object sender, EventArgs e)
         {
 
         }

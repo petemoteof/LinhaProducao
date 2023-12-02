@@ -34,12 +34,11 @@
             // listViewClientes
             // 
             this.listViewClientes.HideSelection = false;
-            this.listViewClientes.Location = new System.Drawing.Point(2, 2);
+            this.listViewClientes.Location = new System.Drawing.Point(168, 108);
             this.listViewClientes.Name = "listViewClientes";
-            this.listViewClientes.Size = new System.Drawing.Size(786, 436);
+            this.listViewClientes.Size = new System.Drawing.Size(620, 343);
             this.listViewClientes.TabIndex = 0;
             this.listViewClientes.UseCompatibleStateImageBehavior = false;
-            this.listViewClientes.SelectedIndexChanged += new System.EventHandler(this.listViewClientes_SelectedIndexChanged);
             // 
             // PaginaClientes
             // 
@@ -49,6 +48,7 @@
             this.Controls.Add(this.listViewClientes);
             this.Name = "PaginaClientes";
             this.Text = "PaginaClientes";
+            this.Load += new System.EventHandler(this.PaginaClientes_Load);
             this.ResumeLayout(false);
 
         }

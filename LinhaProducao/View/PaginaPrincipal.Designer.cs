@@ -29,8 +29,9 @@
         private void InitializeComponent()
         {
             this.painelCaberalho = new System.Windows.Forms.Panel();
-            this.barraLateral = new System.Windows.Forms.Panel();
             this.labelTitulo = new System.Windows.Forms.Label();
+            this.barraLateral = new System.Windows.Forms.Panel();
+            this.buttonProdutos = new System.Windows.Forms.Button();
             this.buttonCliente = new System.Windows.Forms.Button();
             this.panelConteudo = new System.Windows.Forms.Panel();
             this.painelCaberalho.SuspendLayout();
@@ -47,16 +48,6 @@
             this.painelCaberalho.Size = new System.Drawing.Size(780, 56);
             this.painelCaberalho.TabIndex = 0;
             // 
-            // barraLateral
-            // 
-            this.barraLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
-            this.barraLateral.Controls.Add(this.buttonCliente);
-            this.barraLateral.Dock = System.Windows.Forms.DockStyle.Left;
-            this.barraLateral.Location = new System.Drawing.Point(0, 56);
-            this.barraLateral.Name = "barraLateral";
-            this.barraLateral.Size = new System.Drawing.Size(137, 401);
-            this.barraLateral.TabIndex = 1;
-            // 
             // labelTitulo
             // 
             this.labelTitulo.AutoSize = true;
@@ -69,6 +60,32 @@
             this.labelTitulo.TabIndex = 0;
             this.labelTitulo.Text = "Linha de Produção";
             this.labelTitulo.Click += new System.EventHandler(this.labelTitulo_Click);
+            // 
+            // barraLateral
+            // 
+            this.barraLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.barraLateral.Controls.Add(this.buttonProdutos);
+            this.barraLateral.Controls.Add(this.buttonCliente);
+            this.barraLateral.Dock = System.Windows.Forms.DockStyle.Left;
+            this.barraLateral.Location = new System.Drawing.Point(0, 56);
+            this.barraLateral.Name = "barraLateral";
+            this.barraLateral.Size = new System.Drawing.Size(137, 401);
+            this.barraLateral.TabIndex = 1;
+            // 
+            // buttonProdutos
+            // 
+            this.buttonProdutos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.buttonProdutos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.buttonProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonProdutos.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProdutos.ForeColor = System.Drawing.Color.White;
+            this.buttonProdutos.Location = new System.Drawing.Point(10, 57);
+            this.buttonProdutos.Name = "buttonProdutos";
+            this.buttonProdutos.Size = new System.Drawing.Size(117, 45);
+            this.buttonProdutos.TabIndex = 2;
+            this.buttonProdutos.Text = "Produtos";
+            this.buttonProdutos.UseVisualStyleBackColor = false;
+            this.buttonProdutos.Click += new System.EventHandler(this.buttonProdutos_Click);
             // 
             // buttonCliente
             // 
@@ -92,6 +109,7 @@
             this.panelConteudo.Name = "panelConteudo";
             this.panelConteudo.Size = new System.Drawing.Size(643, 401);
             this.panelConteudo.TabIndex = 2;
+            this.panelConteudo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelConteudo_Paint);
             // 
             // PaginaPrincipal
             // 
@@ -119,5 +137,6 @@
         private System.Windows.Forms.Label labelTitulo;
         private System.Windows.Forms.Button buttonCliente;
         private System.Windows.Forms.Panel panelConteudo;
+        private System.Windows.Forms.Button buttonProdutos;
     }
 }
