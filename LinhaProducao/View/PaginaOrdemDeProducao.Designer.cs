@@ -1,6 +1,6 @@
 ﻿namespace LinhaProducao.View
 {
-    partial class PaginaClientes
+    partial class PaginaOrdemDeProducao
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listViewClientes = new System.Windows.Forms.ListView();
+            this.listViewOrdemDeProducao = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // listViewClientes
+            // listViewOrdemDeProducao
             // 
-            this.listViewClientes.HideSelection = false;
-            this.listViewClientes.Location = new System.Drawing.Point(12, 12);
-            this.listViewClientes.Name = "listViewClientes";
-            this.listViewClientes.Size = new System.Drawing.Size(776, 426);
-            this.listViewClientes.TabIndex = 0;
-            this.listViewClientes.UseCompatibleStateImageBehavior = false;
+            this.listViewOrdemDeProducao.HideSelection = false;
+            this.listViewOrdemDeProducao.Location = new System.Drawing.Point(12, 12);
+            this.listViewOrdemDeProducao.Name = "listViewOrdemDeProducao";
+            this.listViewOrdemDeProducao.Size = new System.Drawing.Size(776, 426);
+            this.listViewOrdemDeProducao.TabIndex = 0;
+            this.listViewOrdemDeProducao.UseCompatibleStateImageBehavior = false;
+            this.listViewOrdemDeProducao.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
-            // PaginaClientes
+            // PaginaOrdemDeProducao
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listViewClientes);
-            this.Name = "PaginaClientes";
-            this.Text = "PaginaClientes";
-            this.Load += new System.EventHandler(this.PaginaClientes_Load);
+            this.Controls.Add(this.listViewOrdemDeProducao);
+            this.Name = "PaginaOrdemDeProducao";
+            this.Text = "PaginaOrdemDeProducao";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListView listViewClientes;
+        private System.Windows.Forms.ListView listViewOrdemDeProducao;
     }
 }

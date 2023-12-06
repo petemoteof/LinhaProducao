@@ -74,7 +74,32 @@ namespace LinhaProducao.View
 
         private void buttonProdutos_Click(object sender, EventArgs e)
         {
+            AbrirForm<PaginaProdutos>();
+        }
 
+        private void buttonLinhaProducao_Click(object sender, EventArgs e)
+        {
+            AbrirForm<PaginaLinhaProducao>();
+        }
+
+        private void buttonOrdemProducao_Click(object sender, EventArgs e)
+        {
+            AbrirForm<PaginaOrdemDeProducao>();
+        }
+
+        private void buttonSetor_Click(object sender, EventArgs e)
+        {
+            AbrirForm<PaginaSetor>();
+        }
+
+        private void buttonProcessos_Click(object sender, EventArgs e)
+        {
+            AbrirForm<PaginaProcessos>();
+        }
+
+        private void buttonEtapas_Click(object sender, EventArgs e)
+        {
+            AbrirForm<PaginaEtapas>();
         }
     }
 }

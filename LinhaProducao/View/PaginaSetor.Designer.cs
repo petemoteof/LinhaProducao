@@ -1,6 +1,6 @@
 ﻿namespace LinhaProducao.View
 {
-    partial class PaginaClientes
+    partial class PaginaSetor
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listViewClientes = new System.Windows.Forms.ListView();
+            this.listViewSetor = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // listViewClientes
+            // listViewSetor
             // 
-            this.listViewClientes.HideSelection = false;
-            this.listViewClientes.Location = new System.Drawing.Point(12, 12);
-            this.listViewClientes.Name = "listViewClientes";
-            this.listViewClientes.Size = new System.Drawing.Size(776, 426);
-            this.listViewClientes.TabIndex = 0;
-            this.listViewClientes.UseCompatibleStateImageBehavior = false;
+            this.listViewSetor.HideSelection = false;
+            this.listViewSetor.Location = new System.Drawing.Point(12, 12);
+            this.listViewSetor.Name = "listViewSetor";
+            this.listViewSetor.Size = new System.Drawing.Size(776, 426);
+            this.listViewSetor.TabIndex = 0;
+            this.listViewSetor.UseCompatibleStateImageBehavior = false;
+            this.listViewSetor.SelectedIndexChanged += new System.EventHandler(this.listViewSetor_SelectedIndexChanged);
             // 
-            // PaginaClientes
+            // PaginaSetor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listViewClientes);
-            this.Name = "PaginaClientes";
-            this.Text = "PaginaClientes";
-            this.Load += new System.EventHandler(this.PaginaClientes_Load);
+            this.Controls.Add(this.listViewSetor);
+            this.Name = "PaginaSetor";
+            this.Text = "PaginaSetor";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListView listViewClientes;
+        private System.Windows.Forms.ListView listViewSetor;
     }
 }

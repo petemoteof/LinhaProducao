@@ -121,6 +121,18 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Setor.cs" />
+    <Compile Include="View\PaginaEtapas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PaginaEtapas.Designer.cs">
+      <DependentUpon>PaginaEtapas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PaginaLinhaProducao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PaginaLinhaProducao.Designer.cs">
+      <DependentUpon>PaginaLinhaProducao.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\PaginaClientes.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -133,11 +145,35 @@
     <Compile Include="View\PaginaLogin.Designer.cs">
       <DependentUpon>PaginaLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\PaginaOrdemDeProducao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PaginaOrdemDeProducao.Designer.cs">
+      <DependentUpon>PaginaOrdemDeProducao.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\PaginaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View\PaginaPrincipal.Designer.cs">
       <DependentUpon>PaginaPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PaginaProcessos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PaginaProcessos.Designer.cs">
+      <DependentUpon>PaginaProcessos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PaginaProdutos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PaginaProdutos.Designer.cs">
+      <DependentUpon>PaginaProdutos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PaginaSetor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PaginaSetor.Designer.cs">
+      <DependentUpon>PaginaSetor.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -151,14 +187,32 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="View\PaginaEtapas.resx">
+      <DependentUpon>PaginaEtapas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PaginaLinhaProducao.resx">
+      <DependentUpon>PaginaLinhaProducao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\PaginaClientes.resx">
       <DependentUpon>PaginaClientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\PaginaLogin.resx">
       <DependentUpon>PaginaLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\PaginaOrdemDeProducao.resx">
+      <DependentUpon>PaginaOrdemDeProducao.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\PaginaPrincipal.resx">
       <DependentUpon>PaginaPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PaginaProcessos.resx">
+      <DependentUpon>PaginaProcessos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PaginaProdutos.resx">
+      <DependentUpon>PaginaProdutos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PaginaSetor.resx">
+      <DependentUpon>PaginaSetor.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

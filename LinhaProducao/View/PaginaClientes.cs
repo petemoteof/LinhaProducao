@@ -67,5 +67,10 @@ namespace LinhaProducao.View
         {
 
         }
+
+        private void listViewClientes_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }

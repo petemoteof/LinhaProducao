@@ -34,6 +34,11 @@
             this.buttonProdutos = new System.Windows.Forms.Button();
             this.buttonCliente = new System.Windows.Forms.Button();
             this.panelConteudo = new System.Windows.Forms.Panel();
+            this.buttonLinhaProducao = new System.Windows.Forms.Button();
+            this.buttonOrdemProducao = new System.Windows.Forms.Button();
+            this.buttonSetor = new System.Windows.Forms.Button();
+            this.buttonProcessos = new System.Windows.Forms.Button();
+            this.buttonEtapas = new System.Windows.Forms.Button();
             this.painelCaberalho.SuspendLayout();
             this.barraLateral.SuspendLayout();
             this.SuspendLayout();
@@ -45,7 +50,7 @@
             this.painelCaberalho.Dock = System.Windows.Forms.DockStyle.Top;
             this.painelCaberalho.Location = new System.Drawing.Point(0, 0);
             this.painelCaberalho.Name = "painelCaberalho";
-            this.painelCaberalho.Size = new System.Drawing.Size(780, 56);
+            this.painelCaberalho.Size = new System.Drawing.Size(1297, 56);
             this.painelCaberalho.TabIndex = 0;
             // 
             // labelTitulo
@@ -65,11 +70,16 @@
             // 
             this.barraLateral.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
             this.barraLateral.Controls.Add(this.buttonProdutos);
+            this.barraLateral.Controls.Add(this.buttonEtapas);
+            this.barraLateral.Controls.Add(this.buttonProcessos);
+            this.barraLateral.Controls.Add(this.buttonSetor);
+            this.barraLateral.Controls.Add(this.buttonOrdemProducao);
+            this.barraLateral.Controls.Add(this.buttonLinhaProducao);
             this.barraLateral.Controls.Add(this.buttonCliente);
             this.barraLateral.Dock = System.Windows.Forms.DockStyle.Left;
             this.barraLateral.Location = new System.Drawing.Point(0, 56);
             this.barraLateral.Name = "barraLateral";
-            this.barraLateral.Size = new System.Drawing.Size(137, 401);
+            this.barraLateral.Size = new System.Drawing.Size(137, 580);
             this.barraLateral.TabIndex = 1;
             // 
             // buttonProdutos
@@ -79,9 +89,9 @@
             this.buttonProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonProdutos.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonProdutos.ForeColor = System.Drawing.Color.White;
-            this.buttonProdutos.Location = new System.Drawing.Point(10, 57);
+            this.buttonProdutos.Location = new System.Drawing.Point(10, 288);
             this.buttonProdutos.Name = "buttonProdutos";
-            this.buttonProdutos.Size = new System.Drawing.Size(117, 45);
+            this.buttonProdutos.Size = new System.Drawing.Size(117, 40);
             this.buttonProdutos.TabIndex = 2;
             this.buttonProdutos.Text = "Produtos";
             this.buttonProdutos.UseVisualStyleBackColor = false;
@@ -94,9 +104,9 @@
             this.buttonCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buttonCliente.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonCliente.ForeColor = System.Drawing.Color.White;
-            this.buttonCliente.Location = new System.Drawing.Point(10, 6);
+            this.buttonCliente.Location = new System.Drawing.Point(10, 3);
             this.buttonCliente.Name = "buttonCliente";
-            this.buttonCliente.Size = new System.Drawing.Size(117, 45);
+            this.buttonCliente.Size = new System.Drawing.Size(117, 43);
             this.buttonCliente.TabIndex = 1;
             this.buttonCliente.Text = "Clientes";
             this.buttonCliente.UseVisualStyleBackColor = false;
@@ -107,15 +117,90 @@
             this.panelConteudo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelConteudo.Location = new System.Drawing.Point(137, 56);
             this.panelConteudo.Name = "panelConteudo";
-            this.panelConteudo.Size = new System.Drawing.Size(643, 401);
+            this.panelConteudo.Size = new System.Drawing.Size(1160, 580);
             this.panelConteudo.TabIndex = 2;
             this.panelConteudo.Paint += new System.Windows.Forms.PaintEventHandler(this.panelConteudo_Paint);
+            // 
+            // buttonLinhaProducao
+            // 
+            this.buttonLinhaProducao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.buttonLinhaProducao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.buttonLinhaProducao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLinhaProducao.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLinhaProducao.ForeColor = System.Drawing.Color.White;
+            this.buttonLinhaProducao.Location = new System.Drawing.Point(10, 108);
+            this.buttonLinhaProducao.Name = "buttonLinhaProducao";
+            this.buttonLinhaProducao.Size = new System.Drawing.Size(117, 70);
+            this.buttonLinhaProducao.TabIndex = 3;
+            this.buttonLinhaProducao.Text = "Linha de Produção";
+            this.buttonLinhaProducao.UseVisualStyleBackColor = false;
+            this.buttonLinhaProducao.Click += new System.EventHandler(this.buttonLinhaProducao_Click);
+            // 
+            // buttonOrdemProducao
+            // 
+            this.buttonOrdemProducao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.buttonOrdemProducao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.buttonOrdemProducao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonOrdemProducao.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonOrdemProducao.ForeColor = System.Drawing.Color.White;
+            this.buttonOrdemProducao.Location = new System.Drawing.Point(10, 184);
+            this.buttonOrdemProducao.Name = "buttonOrdemProducao";
+            this.buttonOrdemProducao.Size = new System.Drawing.Size(117, 98);
+            this.buttonOrdemProducao.TabIndex = 4;
+            this.buttonOrdemProducao.Text = "Ordem de Produção";
+            this.buttonOrdemProducao.UseVisualStyleBackColor = false;
+            this.buttonOrdemProducao.Click += new System.EventHandler(this.buttonOrdemProducao_Click);
+            // 
+            // buttonSetor
+            // 
+            this.buttonSetor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.buttonSetor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.buttonSetor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonSetor.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonSetor.ForeColor = System.Drawing.Color.White;
+            this.buttonSetor.Location = new System.Drawing.Point(10, 390);
+            this.buttonSetor.Name = "buttonSetor";
+            this.buttonSetor.Size = new System.Drawing.Size(117, 44);
+            this.buttonSetor.TabIndex = 5;
+            this.buttonSetor.Text = "Setores";
+            this.buttonSetor.UseVisualStyleBackColor = false;
+            this.buttonSetor.Click += new System.EventHandler(this.buttonSetor_Click);
+            // 
+            // buttonProcessos
+            // 
+            this.buttonProcessos.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.buttonProcessos.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.buttonProcessos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonProcessos.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonProcessos.ForeColor = System.Drawing.Color.White;
+            this.buttonProcessos.Location = new System.Drawing.Point(10, 334);
+            this.buttonProcessos.Name = "buttonProcessos";
+            this.buttonProcessos.Size = new System.Drawing.Size(121, 50);
+            this.buttonProcessos.TabIndex = 6;
+            this.buttonProcessos.Text = "Processos";
+            this.buttonProcessos.UseVisualStyleBackColor = false;
+            this.buttonProcessos.Click += new System.EventHandler(this.buttonProcessos_Click);
+            // 
+            // buttonEtapas
+            // 
+            this.buttonEtapas.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.buttonEtapas.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(46)))), ((int)(((byte)(59)))));
+            this.buttonEtapas.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonEtapas.Font = new System.Drawing.Font("Calibri", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonEtapas.ForeColor = System.Drawing.Color.White;
+            this.buttonEtapas.Location = new System.Drawing.Point(6, 52);
+            this.buttonEtapas.Name = "buttonEtapas";
+            this.buttonEtapas.Size = new System.Drawing.Size(121, 50);
+            this.buttonEtapas.TabIndex = 7;
+            this.buttonEtapas.Text = "Etapas";
+            this.buttonEtapas.UseVisualStyleBackColor = false;
+            this.buttonEtapas.Click += new System.EventHandler(this.buttonEtapas_Click);
             // 
             // PaginaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(780, 457);
+            this.ClientSize = new System.Drawing.Size(1297, 636);
             this.Controls.Add(this.panelConteudo);
             this.Controls.Add(this.barraLateral);
             this.Controls.Add(this.painelCaberalho);
@@ -138,5 +223,10 @@
         private System.Windows.Forms.Button buttonCliente;
         private System.Windows.Forms.Panel panelConteudo;
         private System.Windows.Forms.Button buttonProdutos;
+        private System.Windows.Forms.Button buttonLinhaProducao;
+        private System.Windows.Forms.Button buttonOrdemProducao;
+        private System.Windows.Forms.Button buttonSetor;
+        private System.Windows.Forms.Button buttonProcessos;
+        private System.Windows.Forms.Button buttonEtapas;
     }
 }

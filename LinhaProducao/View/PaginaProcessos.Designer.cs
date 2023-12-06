@@ -1,6 +1,6 @@
 ﻿namespace LinhaProducao.View
 {
-    partial class PaginaClientes
+    partial class PaginaProcessos
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.listViewClientes = new System.Windows.Forms.ListView();
+            this.listViewProcessos = new System.Windows.Forms.ListView();
             this.SuspendLayout();
             // 
-            // listViewClientes
+            // listViewProcessos
             // 
-            this.listViewClientes.HideSelection = false;
-            this.listViewClientes.Location = new System.Drawing.Point(12, 12);
-            this.listViewClientes.Name = "listViewClientes";
-            this.listViewClientes.Size = new System.Drawing.Size(776, 426);
-            this.listViewClientes.TabIndex = 0;
-            this.listViewClientes.UseCompatibleStateImageBehavior = false;
+            this.listViewProcessos.HideSelection = false;
+            this.listViewProcessos.Location = new System.Drawing.Point(12, 12);
+            this.listViewProcessos.Name = "listViewProcessos";
+            this.listViewProcessos.Size = new System.Drawing.Size(776, 426);
+            this.listViewProcessos.TabIndex = 0;
+            this.listViewProcessos.UseCompatibleStateImageBehavior = false;
+            this.listViewProcessos.SelectedIndexChanged += new System.EventHandler(this.listViewProcessos_SelectedIndexChanged);
             // 
-            // PaginaClientes
+            // PaginaProcessos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.listViewClientes);
-            this.Name = "PaginaClientes";
-            this.Text = "PaginaClientes";
-            this.Load += new System.EventHandler(this.PaginaClientes_Load);
+            this.Controls.Add(this.listViewProcessos);
+            this.Name = "PaginaProcessos";
+            this.Text = "PaginaProcessos";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.ListView listViewClientes;
+        private System.Windows.Forms.ListView listViewProcessos;
     }
 }

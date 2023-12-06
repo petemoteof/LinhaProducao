@@ -19,7 +19,7 @@ namespace Listas
         public DateTime  data_cadastro;
 
 
-        public List<OrdemProducaos> GetListaInsumos()
+        public List<OrdemProducaos> GetListaOrdemProducao()
         {
             List<OrdemProducaos> ordemProducao = new List<OrdemProducaos>();
 
